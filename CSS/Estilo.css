@@ -1,0 +1,525 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #ffffff;
+
+    color: #0f3d5f;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #0a73ff;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.header-content {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo {
+    height: 45px;
+
+    width: auto;
+}
+
+header h1 {
+    font-size: 32px;
+
+    margin: 0;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    background: #0d4f70;
+
+    padding: 14px;
+
+    text-align: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    position: relative;
+
+    display: inline-block;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #ffffff;
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   ÂNCORAS
+========================= */
+
+#inicio,
+#servicos,
+#sobre,
+#contato {
+    scroll-margin-top: 80px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: #e8f0fb;
+}
+
+.hero h1 {
+    font-size: 42px;
+
+    margin: 0;
+
+    color: #0f3d5f;
+}
+
+.hero p {
+    font-size: 18px;
+
+    margin-top: 12px;
+}
+
+
+/* =========================
+   CARROSSEL
+========================= */
+
+.carousel {
+    position: relative;
+
+    width: calc(100% - 40px);
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.15);
+}
+
+.carousel-track {
+    display: flex;
+
+    width: 300%;
+
+    animation: slide 15s infinite ease-in-out;
+}
+
+.carousel-track img {
+    width: 33.333333%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   ANIMAÇÃO CARROSSEL
+========================= */
+
+@keyframes slide {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    28% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-33.333333%);
+    }
+
+    61% {
+        transform: translateX(-33.333333%);
+    }
+
+    66% {
+        transform: translateX(-66.666666%);
+    }
+
+    94% {
+        transform: translateX(-66.666666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 70px 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+
+    margin-top: 0;
+
+    margin-bottom: 40px;
+
+    font-size: 30px;
+
+    color: #0f3d5f;
+}
+
+
+/* =========================
+   ANIMAÇÃO AO ROLAR
+========================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: #ffffff;
+
+    border: 2px solid #1f6fae;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #0a73ff;
+
+    box-shadow:
+        0 14px 30px
+        rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #0d4f70;
+
+    margin-top: 0;
+}
+
+
+/* =========================
+   LINKS DAS SEÇÕES
+========================= */
+
+.section a {
+    color: #0a73ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0d4f70;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .logo {
+        height: 38px;
+    }
+
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav a {
+        margin: 6px 8px;
+
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .carousel {
+        width: calc(100% - 30px);
+
+        margin: 30px auto;
+    }
+
+    .carousel-track img {
+        height: 220px;
+    }
+
+}
+
+
+/* =========================
+   ACESSIBILIDADE
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .reveal {
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+    }
+
+    .carousel-track {
+        animation: none;
+    }
+
+}
+/* =========================
+   SOBRE
+========================= */
+#sobre {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+#sobre h2 {
+    color: #0b5ed7;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo {
+    color: #174a7e;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.sobre-conteudo p {
+    margin-bottom: 22px;
+}
+
+.sobre-conteudo strong {
+    color: #0066cc;
+    font-weight: 700;
+}
+
+.sobre-destaque {
+    font-size: 1.22rem;
+    color: #123f6b;
+}
+
+.sobre-box {
+    margin: 35px 0;
+    padding: 25px 30px;
+    background: rgba(0, 102, 204, 0.07);
+    border-left: 4px solid #0066cc;
+    border-radius: 8px;
+}
+
+.sobre-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #0057b8;
+    font-size: 1.3rem;
+}
+
+.sobre-box p {
+    margin-bottom: 0;
+}
+
+.sobre-final {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.sobre-final span {
+    color: #0066cc;
+    font-weight: 700;
+}
