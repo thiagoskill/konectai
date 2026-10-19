@@ -133,7 +133,7 @@ body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smoo
             INFORMÁTICA
 
           @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] leading-[0.95]
-            Seu departamento de TI,
+            Seu departamento de TI, 
             @span class=text-[#168BD6]
               sem contratar ninguém.
 
@@ -174,9 +174,9 @@ body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smoo
             SEGURANÇA DIGITAL
 
           @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] leading-[0.95]
-            Sua empresa protegida
+            Sua empresa protegida 
             @span class=text-[#18A875]
-              em 4 camadas.
+                em 4 camadas.
 
           @p class=mt-6 text-lg leading-relaxed text-slate-700
             Proteção completa contra vírus, invasões e perda de dados, instalada e acompanhada pela Konectai.
