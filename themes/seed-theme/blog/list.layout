@@ -1,0 +1,47 @@
+---
+title: Blog
+description: Artigos e novidades.
+---
+@section class=max-w-6xl mx-auto px-6 py-16
+  @header class=max-w-2xl mb-12
+    @h1 class=text-4xl md:text-5xl font-bold text-[var(--seed-color-text)]
+      @if {archive_title}
+        {archive_title}
+      @else
+        Blog
+    @p class=mt-4 text-lg text-[var(--seed-color-text-muted)]
+      Artigos e novidades.
+  @div class=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+    @each blog
+      @post-card
+        @if {blog-image}
+          @if {blog-alt}
+            @post-image src={blog-image}, alt={blog-alt}, loading=lazy
+          @else
+            @post-image src={blog-image}, alt={blog-title}, loading=lazy
+        @post-content
+          @if {blog-category}
+            @post-category href={blog-category_url}
+              {blog-category}
+          @post-title variant=linked
+            @a href={blog-url}
+              {blog-title}
+          @if {blog-description}
+            @post-excerpt
+              {blog-description}
+          @post-meta
+            @post-date datetime={blog-publish_date}
+              {blog-publish_date}
+            @if {blog-author_name}
+              @span
+                {blog-author_name}
+  @if {total_pages}
+    @pagination class=mt-12
+      @if {prev_url}
+        @prev href={prev_url}
+          Página anterior
+      @span class=text-sm text-[var(--seed-color-text-muted)]
+        Página {page} de {total_pages}
+      @if {next_url}
+        @next href={next_url}
+          Próxima página

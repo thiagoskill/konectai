@@ -1,0 +1,7 @@
+nav:
+  tag: nav
+  class: seed-nav fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-transparent bg-transparent transition-all duration-300
+
+  variant:
+    dark: bg-gray-900 border-gray-800 text-white
+    transparent: bg-transparent border-transparent

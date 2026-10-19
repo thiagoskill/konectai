@@ -1,0 +1,26 @@
+---
+title: {title}
+---
+@article class=max-w-3xl mx-auto px-6 py-16
+  @a href=/blog/, class=inline-flex items-center text-sm text-[var(--seed-color-primary)] mb-8
+    ← Voltar para o blog
+  @header class=mb-10
+    @if {image}
+      @if {alt}
+        @img src={image}, alt={alt}, class=w-full max-h-[32rem] object-cover rounded-[var(--seed-radius-lg)] mb-8
+      @else
+        @img src={image}, alt={title}, class=w-full max-h-[32rem] object-cover rounded-[var(--seed-radius-lg)] mb-8
+    @if {category}
+      @category-badge href={category_url}, variant=primary
+        {category}
+    @h1 class=text-4xl md:text-5xl font-bold text-[var(--seed-color-text)] leading-tight mt-4
+      {title}
+    @post-meta class=mt-5
+      @if {publish_date}
+        @post-date datetime={publish_date}
+          {publish_date}
+      @if {author_name}
+        @span
+          {author_name}
+  @div class=prose max-w-none
+    {content}

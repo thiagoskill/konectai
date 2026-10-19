@@ -1,0 +1,6 @@
+@summary class=flex items-center justify-between gap-4 py-4 px-1 cursor-pointer list-none text-base font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-150
+  {?title}
+  @span class=flex-shrink-0 text-gray-400 group-open:rotate-180 transition-transform duration-200
+    ▾
+@div class=pb-4 px-1 text-gray-600 text-base leading-relaxed
+  {?children}

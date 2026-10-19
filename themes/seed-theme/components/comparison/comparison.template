@@ -1,0 +1,3 @@
+@table as=table, class=w-full text-sm sm:text-base
+  @tbody as=tbody, class=divide-y divide-gray-100
+    {?children}

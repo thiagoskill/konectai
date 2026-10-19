@@ -1,0 +1,6 @@
+theme: seed-theme
+js: file
+css: file
+minify: false
+optimize-css: true
+optimize-images: true

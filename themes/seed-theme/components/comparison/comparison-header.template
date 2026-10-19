@@ -1,0 +1,6 @@
+@thead class=bg-blue-950 border-b border-gray-200
+  @tr
+    @th class=text-base px-4 py-3 sm:px-6 sm:py-6 text-left font-semibold text-white
+      {?col1_header}
+    @th class=text-base px-4 py-3 sm:px-6 sm:py-6 text-left font-semibold text-white
+      {?col2_header}

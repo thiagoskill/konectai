@@ -1,0 +1,285 @@
+---
+title: Konectai Tecnologia
+description: Soluções para escolas, informática, segurança digital e gestão eletrônica de documentos.
+lang: pt-BR
+layout: false
+js:
+  - /static/konectai.js
+body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smooth
+---
+
+@header id=inicio, class=sticky top-0 z-50 border-b border-white/10 bg-[#081F41]/95 backdrop-blur
+  @div class=max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between
+    @a href=#inicio, class=flex items-center gap-3 text-white no-underline
+      @div class=w-12 h-12 rounded-2xl overflow-hidden bg-white flex items-center justify-center
+        @img src=/static/logo.png, alt="Logo Konectai", class=w-full h-full object-contain
+
+      @div
+        @strong class=block text-xl leading-none
+          Konect.ai
+        @span class=block mt-1 text-[10px] uppercase tracking-[0.22em] text-slate-400
+          Tecnologia
+
+    @div class=hidden md:flex items-center gap-1
+      @a data-nav-link=true, href=#escolas, class=px-4 py-2 rounded-full text-sm font-semibold text-slate-300 hover:text-white hover:bg-white/10 transition
+        Escolas
+      @a data-nav-link=true, href=#informatica, class=px-4 py-2 rounded-full text-sm font-semibold text-slate-300 hover:text-white hover:bg-white/10 transition
+        Informática
+      @a data-nav-link=true, href=#seguranca, class=px-4 py-2 rounded-full text-sm font-semibold text-slate-300 hover:text-white hover:bg-white/10 transition
+        Segurança Digital
+      @a data-nav-link=true, href=#ged, class=px-4 py-2 rounded-full text-sm font-semibold text-slate-300 hover:text-white hover:bg-white/10 transition
+        GED
+      @a href=https://wa.me/5567981692351, target=_blank, class=ml-2 px-5 py-2.5 rounded-full bg-white text-[#0B2448] text-sm font-black hover:-translate-y-0.5 transition
+        WhatsApp
+
+    @button data-menu-button=true, type=button, aria-label="Abrir menu", aria-expanded=false, class=md:hidden w-11 h-11 rounded-xl border border-white/15 text-white text-xl
+      ☰
+
+  @div data-mobile-menu=true, class=hidden md:hidden border-t border-white/10 bg-[#081F41]
+    @div class=max-w-7xl mx-auto px-5 py-4 grid gap-2
+      @a href=#escolas, class=px-4 py-3 rounded-xl text-white hover:bg-white/10
+        Escolas
+      @a href=#informatica, class=px-4 py-3 rounded-xl text-white hover:bg-white/10
+        Informática
+      @a href=#seguranca, class=px-4 py-3 rounded-xl text-white hover:bg-white/10
+        Segurança Digital
+      @a href=#ged, class=px-4 py-3 rounded-xl text-white hover:bg-white/10
+        GED
+      @a href=https://wa.me/5567981692351, target=_blank, class=px-4 py-3 rounded-xl bg-white text-[#0B2448] font-black text-center
+        Falar no WhatsApp
+
+@main
+  @section class=min-h-[78vh] grid place-items-center px-5 py-24 bg-[#081F41] text-white relative overflow-hidden
+    @div class=absolute -top-32 -right-24 w-96 h-96 rounded-full bg-[#2F9FE9]/20 blur-3xl
+    @div class=absolute -bottom-36 -left-20 w-96 h-96 rounded-full bg-[#A98DF4]/15 blur-3xl
+
+    @div data-reveal=true, class=relative max-w-5xl mx-auto text-center opacity-0 translate-y-10 transition-all duration-700 ease-out
+      @span class=inline-flex px-4 py-2 rounded-full border border-[#2F9FE9]/40 bg-[#2F9FE9]/10 text-[#76C7FA] text-xs font-black tracking-[0.2em]
+        KONECTAI TECNOLOGIA
+
+      @h1 class=mt-7 text-5xl md:text-7xl lg:text-8xl font-black tracking-[-0.06em] leading-[0.92] text-white
+        Tecnologia que resolve. Operação que continua.
+
+      @p class=max-w-3xl mx-auto mt-7 text-lg md:text-xl text-slate-300 leading-relaxed
+        Soluções completas para escolas e empresas: compras, infraestrutura, suporte de TI, segurança digital e gestão eletrônica de documentos.
+
+      @div class=mt-9 flex flex-wrap justify-center gap-3
+        @a href=#escolas, class=px-7 py-4 rounded-full bg-white text-[#0B2448] font-black hover:-translate-y-1 transition
+          Conheça as soluções
+
+        @a href=https://wa.me/5567981692351, target=_blank, class=px-7 py-4 rounded-full border border-white/25 text-white font-black hover:bg-white/10 hover:-translate-y-1 transition
+          Solicitar atendimento
+
+  @section id=escolas, class=scroll-mt-24 px-5 py-24 bg-[#FFF8E7]
+    @div data-reveal=true, class=max-w-7xl mx-auto opacity-0 -translate-x-24 transition-all duration-700 ease-out
+      @div class=grid lg:grid-cols-2 gap-12 xl:gap-16 items-center
+        @div
+          @span class=inline-flex px-3 py-1.5 rounded-full bg-[#FFB719] text-[#0B2448] text-xs font-black tracking-[0.16em]
+            ESCOLAS
+
+          @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] leading-[0.95]
+            Tudo o que sua escola precisa,
+            @span class=text-[#E69700]
+              num só fornecedor.
+
+          @p class=mt-6 text-lg leading-relaxed text-slate-700
+            A Konectai fornece produtos de todas as áreas da escola e cuida da reforma e da manutenção do prédio.
+
+          @div class=mt-8 grid sm:grid-cols-3 gap-4
+            @div class=rounded-2xl bg-white p-5 shadow-sm border border-[#FFB719]/20
+              @strong class=block text-3xl font-black
+                7
+              @span class=text-sm text-slate-600
+                escolas atendidas
+
+            @div class=rounded-2xl bg-white p-5 shadow-sm border border-[#FFB719]/20
+              @strong class=block text-3xl font-black
+                2.874
+              @span class=text-sm text-slate-600
+                atendimentos realizados
+
+            @div class=rounded-2xl bg-white p-5 shadow-sm border border-[#FFB719]/20
+              @strong class=block text-3xl font-black
+                5 min
+              @span class=text-sm text-slate-600
+                resposta média
+
+          @div class=mt-6 rounded-3xl bg-[#0B2448] p-7 text-white
+            @h3 class=text-xl font-black
+              Compras, reforma e manutenção
+
+            @ul class=mt-4 space-y-3 text-slate-200
+              @li
+                Um contato, um orçamento e um fornecedor.
+              @li
+                Obra com escopo, preço e cronograma definidos.
+              @li
+                Manutenção contínua depois da entrega.
+
+          @a href=https://wa.me/5567981692351?text=Olá%2C%20quero%20falar%20sobre%20soluções%20para%20escolas., target=_blank, class=inline-flex mt-7 px-6 py-3.5 rounded-full bg-[#FFB719] text-[#0B2448] font-black hover:-translate-y-1 transition
+            Mande sua lista ou agende uma vistoria
+
+        @div class=relative
+          @div class=absolute -inset-4 rounded-[2.5rem] bg-[#FFB719]/20 rotate-2
+          @img src=/static/escolas-previa.png, alt="Prévia das peças Konectai para escolas", class=relative w-full rounded-[2rem] shadow-2xl border border-white
+
+  @section id=informatica, class=scroll-mt-24 px-5 py-24 bg-[#EEF8FF]
+    @div data-reveal=true, class=max-w-7xl mx-auto opacity-0 translate-x-24 transition-all duration-700 ease-out
+      @div class=grid lg:grid-cols-2 gap-12 xl:gap-16 items-center
+        @div class=lg:order-2
+          @span class=inline-flex px-3 py-1.5 rounded-full bg-[#2F9FE9] text-[#071D3B] text-xs font-black tracking-[0.16em]
+            INFORMÁTICA
+
+          @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] leading-[0.95]
+            Seu departamento de TI,
+            @span class=text-[#168BD6]
+              sem contratar ninguém.
+
+          @p class=mt-6 text-lg leading-relaxed text-slate-700
+            Suporte, manutenção, projetos e equipamentos com custo previsível e atendimento remoto ou presencial.
+
+          @div class=mt-8 grid gap-4
+            @div class=rounded-2xl bg-white p-6 border border-[#2F9FE9]/20 shadow-sm
+              @strong class=block text-lg font-black
+                1. Levantamento
+              @p class=mt-2 text-slate-600
+                Mapeamos equipamentos, rotinas e necessidades da sua empresa.
+
+            @div class=rounded-2xl bg-white p-6 border border-[#2F9FE9]/20 shadow-sm
+              @strong class=block text-lg font-black
+                2. Plano mensal
+              @p class=mt-2 text-slate-600
+                Montamos um contrato do tamanho da sua operação.
+
+            @div class=rounded-2xl bg-[#0B2448] p-6 text-white shadow-sm
+              @strong class=block text-lg font-black
+                3. Chamado e resolução
+              @p class=mt-2 text-slate-300
+                Primeiro nível remoto. Se não resolver, atendimento presencial.
+
+          @a href=https://wa.me/5567981692351?text=Olá%2C%20quero%20pedir%20um%20diagnóstico%20da%20minha%20TI., target=_blank, class=inline-flex mt-7 px-6 py-3.5 rounded-full bg-[#2F9FE9] text-[#071D3B] font-black hover:-translate-y-1 transition
+            Peça o diagnóstico da sua TI
+
+        @div class=lg:order-1 relative
+          @div class=absolute -inset-4 rounded-[2.5rem] bg-[#2F9FE9]/20 -rotate-2
+          @img src=/static/informatica-previa.png, alt="Prévia das peças Konectai de informática", class=relative w-full rounded-[2rem] shadow-2xl border border-white
+
+  @section id=seguranca, class=scroll-mt-24 px-5 py-24 bg-[#ECFBF5]
+    @div data-reveal=true, class=max-w-7xl mx-auto opacity-0 -translate-x-24 transition-all duration-700 ease-out
+      @div class=grid lg:grid-cols-2 gap-12 xl:gap-16 items-center
+        @div
+          @span class=inline-flex px-3 py-1.5 rounded-full bg-[#31C795] text-[#071D3B] text-xs font-black tracking-[0.16em]
+            SEGURANÇA DIGITAL
+
+          @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] leading-[0.95]
+            Sua empresa protegida
+            @span class=text-[#18A875]
+              em 4 camadas.
+
+          @p class=mt-6 text-lg leading-relaxed text-slate-700
+            Proteção completa contra vírus, invasões e perda de dados, instalada e acompanhada pela Konectai.
+
+          @div class=mt-8 grid sm:grid-cols-2 gap-4
+            @div class=rounded-2xl bg-white p-6 border border-[#31C795]/25
+              @strong class=font-black
+                Firewall
+              @p class=mt-2 text-sm text-slate-600
+                Barra ameaças antes da entrada na rede.
+
+            @div class=rounded-2xl bg-white p-6 border border-[#31C795]/25
+              @strong class=font-black
+                Antivírus gerenciado
+              @p class=mt-2 text-sm text-slate-600
+                Proteção sempre atualizada.
+
+            @div class=rounded-2xl bg-white p-6 border border-[#31C795]/25
+              @strong class=font-black
+                Backup automático
+              @p class=mt-2 text-sm text-slate-600
+                Arquivos guardados e testados.
+
+            @div class=rounded-2xl bg-[#0B2448] p-6 text-white
+              @strong class=font-black
+                Monitoramento
+              @p class=mt-2 text-sm text-slate-300
+                Alerta antes do problema virar prejuízo.
+
+          @a href=https://wa.me/5567981692351?text=Olá%2C%20quero%20pedir%20um%20check-up%20de%20segurança%20da%20minha%20rede., target=_blank, class=inline-flex mt-7 px-6 py-3.5 rounded-full bg-[#31C795] text-[#071D3B] font-black hover:-translate-y-1 transition
+            Peça o check-up de segurança
+
+        @div class=relative
+          @div class=absolute -inset-4 rounded-[2.5rem] bg-[#31C795]/20 rotate-2
+          @img src=/static/seguranca-previa.png, alt="Prévia das peças Konectai de segurança digital", class=relative w-full rounded-[2rem] shadow-2xl border border-white
+
+  @section id=ged, class=scroll-mt-24 px-5 py-24 bg-[#F7F1FF]
+    @div data-reveal=true, class=max-w-7xl mx-auto opacity-0 translate-x-24 transition-all duration-700 ease-out
+      @div class=grid lg:grid-cols-2 gap-12 xl:gap-16 items-center
+        @div class=lg:order-2
+          @span class=inline-flex px-3 py-1.5 rounded-full bg-[#A98DF4] text-[#071D3B] text-xs font-black tracking-[0.16em]
+            GED · DOCUMENTOS
+
+          @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] leading-[0.95]
+            Todos os seus documentos,
+            @span class=text-[#8061D9]
+              encontrados em segundos.
+
+          @p class=mt-6 text-lg leading-relaxed text-slate-700
+            A Konectai digitaliza, organiza e automatiza a papelada do seu escritório para sua equipe encontrar tudo com rapidez.
+
+          @div class=mt-8 rounded-3xl bg-white p-7 border border-[#A98DF4]/25 shadow-sm
+            @h3 class=text-xl font-black
+              GED feito para o seu ramo
+
+            @div class=mt-5 flex flex-wrap gap-2
+              @span class=px-3 py-2 rounded-full bg-[#EDE4FF] text-sm font-bold
+                Advocacia
+              @span class=px-3 py-2 rounded-full bg-[#EDE4FF] text-sm font-bold
+                Contabilidade
+              @span class=px-3 py-2 rounded-full bg-[#EDE4FF] text-sm font-bold
+                Cartórios
+
+            @ul class=mt-6 space-y-3 text-slate-700
+              @li
+                Digitalização e organização por cliente, processo ou tipo.
+              @li
+                Automação das tarefas repetitivas.
+              @li
+                Implantação e suporte pela mesma equipe que cuida da TI.
+
+          @a href=https://wa.me/5567981692351?text=Olá%2C%20quero%20agendar%20uma%20demonstração%20de%20GED., target=_blank, class=inline-flex mt-7 px-6 py-3.5 rounded-full bg-[#A98DF4] text-[#071D3B] font-black hover:-translate-y-1 transition
+            Agende uma demonstração
+
+        @div class=lg:order-1 relative
+          @div class=absolute -inset-4 rounded-[2.5rem] bg-[#A98DF4]/20 -rotate-2
+          @img src=/static/ged-previa.png, alt="Prévia das peças Konectai de GED", class=relative w-full rounded-[2rem] shadow-2xl border border-white
+
+  @section class=px-5 py-24 bg-[#081F41] text-white text-center
+    @div class=max-w-4xl mx-auto
+      @span class=text-[#76C7FA] text-xs font-black tracking-[0.2em]
+        FALE COM A KONECTAI
+
+      @h2 class=mt-5 text-4xl md:text-6xl font-black tracking-[-0.05em] text-white
+        Um problema. Um contato. Uma solução.
+
+      @p class=max-w-2xl mx-auto mt-5 text-lg text-slate-300
+        Conte o que sua escola ou empresa precisa. A Konectai responde rápido e monta a solução certa.
+
+      @a href=https://wa.me/5567981692351, target=_blank, class=inline-flex mt-8 px-8 py-4 rounded-full bg-white text-[#0B2448] font-black hover:-translate-y-1 transition
+        (67) 98169-2351
+
+@div class=bg-[#06172F] text-white
+  @div class=max-w-7xl mx-auto px-5 lg:px-8 py-10 flex flex-col md:flex-row gap-5 md:items-center md:justify-between
+    @div
+      @strong class=text-xl
+        Konect.ai
+      @p class=mt-2 text-sm text-slate-400
+        Tecnologia para escolas e empresas.
+
+    @div class=text-sm text-slate-500 md:text-right
+      @p
+        ©
+        @span data-year=true
+        Konectai Tecnologia. Todos os direitos reservados.
+
+      @p class=mt-2 text-xs text-slate-600
+        Feito com Seed by Thiago da Silva Alves · (88) 9 9807-3780

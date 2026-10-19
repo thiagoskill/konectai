@@ -1,0 +1,6 @@
+accordion:
+  tag: div
+  class: divide-y divide-gray-200 border-y border-gray-200
+  variant:
+    flush: border-0 divide-y divide-gray-200
+    card: rounded-xl border border-gray-200 divide-y divide-gray-200 overflow-hidden

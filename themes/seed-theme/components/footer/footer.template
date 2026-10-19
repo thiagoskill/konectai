@@ -1,0 +1,19 @@
+@div class=max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+  @div class=grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 pb-12 border-b border-gray-100
+    @div class=col-span-2 sm:col-span-1 flex flex-col gap-4
+      @div class=h-10 flex items-center
+        {?logo}
+      @p as=p, class=text-gray-500 text-sm leading-relaxed max-w-xs mt-2
+        {?description}
+
+    {?columns}
+
+    @div class=flex flex-col gap-3
+      {?legal}
+
+  @div class=pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400
+    @div
+      {?copyright}
+    @div class=flex gap-4 items-center
+      {?social}
+

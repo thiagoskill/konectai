@@ -1,0 +1,7 @@
+@div class=flex transition-transform duration-300 ease-in-out, data-carousel-track=true
+  {?children}
+@button class=absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow-md transition-opacity, data-carousel-prev=true
+  ‹
+@button class=absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full w-9 h-9 flex items-center justify-center shadow-md transition-opacity, data-carousel-next=true
+  ›
+@div class=flex justify-center gap-2 mt-3, data-carousel-dots=true

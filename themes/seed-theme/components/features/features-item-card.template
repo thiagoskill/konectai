@@ -1,0 +1,8 @@
+@div class=flex items-start gap-4 bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-sm hover:shadow-md transition-all group
+  @div class=w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gray-100 text-teal-600 flex items-center justify-center shrink-0
+    {?icon}
+  @div
+    @h3 class=font-semibold text-gray-700 text-lg sm:text-xl
+      {?title}
+    @p class=text-gray-600 text-sm sm:text-base mt-2
+      {?description}

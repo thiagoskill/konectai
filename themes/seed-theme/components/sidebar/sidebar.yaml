@@ -1,0 +1,16 @@
+# Sidebar Component
+#
+# Um único markup serve os dois tamanhos: coluna sticky no desktop, gaveta
+# off-canvas no mobile. O gatilho NÃO mora aqui — ver @sidebar-toggle. Um
+# filho `fixed` desta aside seria arrastado junto pelo translate da gaveta,
+# então o botão precisa ser irmão, não descendente.
+sidebar:
+  tag: aside
+  class: flex flex-col w-72 shrink-0 bg-white border-r border-slate-200 overflow-y-auto sticky top-0 h-screen max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:z-50 max-md:-translate-x-full max-md:transition-transform max-md:duration-300 max-md:data-[open]:translate-x-0
+  data-sidebar: true
+
+  variant:
+    dark: bg-slate-900 border-slate-800 text-white
+
+  collapsed:
+    true: w-16

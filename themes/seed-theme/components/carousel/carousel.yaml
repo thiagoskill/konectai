@@ -1,0 +1,10 @@
+carousel:
+  tag: div
+  data-carousel: true
+  class: relative overflow-hidden
+  variant:
+    contained: max-w-5xl mx-auto
+
+slide:
+  tag: div
+  class: w-full flex-shrink-0

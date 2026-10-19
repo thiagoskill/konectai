@@ -1,0 +1,103 @@
+h1:
+  tag: h1
+  class: text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-2
+  variant:
+    muted: text-gray-600
+    gradient: bg-gradient-to-r from-teal-600 to-orange-500 bg-clip-text text-transparent
+  align:
+    center: text-center
+    right: text-right
+
+h2:
+  tag: h2
+  class: text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mt-8 mb-1
+  variant:
+    muted: text-gray-600
+  align:
+    center: text-center
+    right: text-right
+
+h3:
+  tag: h3
+  class: text-lg md:text-xl font-semibold text-gray-900 mt-6 mb-1
+  variant:
+    muted: text-gray-600
+  align:
+    center: text-center
+    right: text-right
+
+h4:
+  tag: h4
+  class: text-base font-semibold text-gray-900 mt-4 mb-1
+  variant:
+    muted: text-gray-600
+  align:
+    center: text-center
+    right: text-right
+
+h5:
+  tag: h5
+  class: text-sm font-semibold text-gray-900 uppercase tracking-wide mt-4 mb-1
+  variant:
+    muted: text-gray-600
+
+h6:
+  tag: h6
+  class: text-xs font-semibold text-gray-700 uppercase tracking-wide mt-4 mb-1
+
+p:
+  tag: p
+  class: text-[15px] text-gray-800 leading-7
+  variant:
+    muted: text-gray-500
+  align:
+    center: text-center
+    right: text-right
+
+lead:
+  tag: p
+  class: text-lg text-gray-600 leading-relaxed
+  variant:
+    muted: text-gray-500
+  align:
+    center: text-center
+    right: text-right
+
+small:
+  tag: small
+  class: text-sm text-gray-500
+
+caption:
+  tag: span
+  class: text-xs text-gray-500
+  variant:
+    uppercase: font-medium uppercase tracking-wider
+
+link:
+  tag: a
+  class: text-teal-600 hover:text-teal-700 underline underline-offset-2 transition-colors
+  variant:
+    muted: text-gray-500 hover:text-gray-700
+
+blockquote:
+  tag: blockquote
+  class: border-l-4 border-teal-500 pl-5 py-1 italic text-gray-600
+  variant:
+    accent: border-teal-600
+    muted: border-gray-300
+
+code:
+  tag: code
+  class: px-1.5 py-0.5 bg-gray-100 text-gray-800 rounded text-[13px] font-mono
+
+pre:
+  tag: pre
+  class: p-4 bg-gray-900 text-gray-100 rounded-lg overflow-x-auto text-[13px] leading-6 font-mono
+
+kbd:
+  tag: kbd
+  class: px-1.5 py-0.5 bg-gray-100 border border-gray-300 rounded text-xs font-mono shadow-sm
+  size:
+    sm: px-1 py-0 text-[10px]
+    md: ""
+    lg: px-2 py-1 text-sm

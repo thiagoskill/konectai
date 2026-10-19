@@ -1,0 +1,101 @@
+article:
+  tag: article
+  class: max-w-none text-[var(--seed-color-text)]
+  size:
+    sm: text-sm
+    md: text-base
+    lg: text-lg
+
+post-card:
+  tag: article
+  class: group overflow-hidden rounded-[var(--seed-radius-lg)] bg-[var(--seed-color-surface)] border border-[var(--seed-color-border)] shadow-[var(--seed-shadow-sm)] transition-shadow hover:shadow-[var(--seed-shadow-md)]
+  variant:
+    horizontal: flex flex-col sm:flex-row
+    minimal: border-0 bg-transparent shadow-none hover:shadow-none
+
+post-image:
+  tag: img
+  class: block w-full h-48 sm:h-56 object-cover rounded-[var(--seed-radius-md)]
+  variant:
+    horizontal: sm:w-48 md:w-64 sm:h-full
+
+post-content:
+  tag: div
+  class: p-5 sm:p-6
+
+post-category:
+  tag: a
+  class: inline-block text-xs sm:text-sm font-semibold text-[var(--seed-color-primary)] hover:text-[var(--seed-color-primary-hover)] mb-2 sm:mb-3
+
+post-title:
+  tag: h3
+  class: text-lg sm:text-xl font-bold text-[var(--seed-color-text)] mb-2 sm:mb-3 transition-colors
+  variant:
+    linked: hover:text-[var(--seed-color-primary)]
+
+post-excerpt:
+  tag: p
+  class: text-[var(--seed-color-text-muted)] text-sm sm:text-base leading-relaxed mb-4
+
+post-meta:
+  tag: div
+  class: flex items-center gap-4 text-sm text-[var(--seed-color-text-muted)]
+
+post-date:
+  tag: time
+  class: text-sm text-[var(--seed-color-text-muted)]
+
+post-read-time:
+  tag: span
+  class: text-sm text-[var(--seed-color-text-muted)]
+
+author-card:
+  tag: section
+  class: flex items-center gap-4
+  variant:
+    centered: flex-col text-center
+    compact: gap-2
+  template: |
+    {?avatar}
+    @div class=min-w-0
+      @p class=font-semibold text-[var(--seed-color-text)]
+        {?name}
+      {?bio}
+
+author-avatar:
+  tag: img
+  class: w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover
+  variant:
+    large: w-16 h-16 sm:w-20 sm:h-20
+
+author-name:
+  tag: p
+  class: font-semibold text-[var(--seed-color-text)] text-sm sm:text-base
+
+author-bio:
+  tag: p
+  class: text-[var(--seed-color-text-muted)] text-sm leading-relaxed
+
+category-badge:
+  tag: a
+  class: inline-flex items-center rounded-[var(--seed-radius-pill)] px-3 py-1 text-xs font-medium
+  variant:
+    primary: bg-[var(--seed-color-primary-soft)] text-[var(--seed-color-primary-strong)]
+    accent: bg-[var(--seed-color-accent-soft)] text-[var(--seed-color-accent)]
+    neutral: bg-[var(--seed-color-surface-muted)] text-[var(--seed-color-text-muted)]
+
+tag:
+  tag: a
+  class: inline-block px-3 py-1 bg-[var(--seed-color-surface-muted)] text-[var(--seed-color-text-muted)] rounded-[var(--seed-radius-pill)] text-xs sm:text-sm transition-colors hover:bg-[var(--seed-color-primary-soft)] hover:text-[var(--seed-color-primary)]
+
+tags-list:
+  tag: div
+  class: flex flex-wrap gap-2
+  template: |
+    {children}
+
+related-posts:
+  tag: section
+  class: grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3
+  template: |
+    {children}

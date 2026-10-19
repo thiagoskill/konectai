@@ -1,0 +1,15 @@
+# Sidebar Toggle
+#
+# Abre e fecha a @sidebar no mobile. Some no desktop, onde a sidebar já é uma
+# coluna visível. Coloque onde a página tiver espaço: dentro de um @nav, se a
+# página tem topbar, ou numa barra própria, se só tem sidebar. Não precisa de
+# props — o JS liga cada toggle à [data-sidebar] da página.
+#
+#   @sidebar-toggle
+#     ☰
+sidebar-toggle:
+  tag: button
+  class: md:hidden inline-flex items-center justify-center w-10 h-10 shrink-0 rounded-lg border-0 bg-transparent cursor-pointer text-xl leading-none text-slate-700 hover:bg-slate-100 transition-colors
+  data-sidebar-toggle: true
+  aria-label: Menu
+  aria-expanded: "false"
