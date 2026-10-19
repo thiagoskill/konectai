@@ -1,0 +1,111 @@
+/* ========================================
+       ANIMATIONS (Reveal on Scroll)
+======================================== */
+
+/* js-ready é adicionado pelo seed-ui.js no <html>.
+   Sem JS, elementos são visíveis normalmente. */
+
+.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(64px);
+  transition:
+    opacity 1s ease-out,
+    transform 0.5s ease-out;
+}
+
+.js-ready .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.js-ready .reveal.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.js-ready .reveal.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.js-ready .reveal.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+.js-ready .reveal.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+/* Lateral entrances */
+.js-ready .reveal-left {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.js-ready .reveal-right {
+  opacity: 0;
+  transform: translateX(48px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.js-ready .reveal-left.visible,
+.js-ready .reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .js-ready .reveal,
+  .js-ready .reveal-left,
+  .js-ready .reveal-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+/* ========================================
+       PIN (Sticky stacking sections)
+======================================== */
+
+section, footer {
+  position: relative;
+}
+
+.pin {
+  position: sticky;
+  top: 3.5rem;
+}
+
+.pin-col {
+  position: sticky;
+  top: 3.5rem;
+  align-self: start;
+}
+
+/* Nav active state */
+.seed-nav-item.active {
+  background-color: rgb(243 244 246);
+  color: rgb(17 24 39);
+  font-weight: 600;
+}
+
+/* ========================================
+       SIDEBAR (gaveta mobile)
+======================================== */
+
+/* Overlay como pseudo-elemento: nenhum markup extra, e o clique cai no body,
+   que o sidebar.js já trata como "clique fora" para fechar. */
+@media (max-width: 767px) {
+  body.seed-sidebar-open {
+    overflow: hidden;
+  }
+
+  body.seed-sidebar-open::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgb(0 0 0 / 0.4);
+  }
+}
