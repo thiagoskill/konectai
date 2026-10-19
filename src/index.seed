@@ -104,17 +104,19 @@ body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smoo
               @span class=text-sm text-slate-600
                 resposta média
 
-          @div class=mt-6 rounded-3xl bg-[#0B2448] p-7 text-white
-            @h3 class=text-xl font-black
+          @div class=mt-6 rounded-3xl bg-[#0B2448] p-7
+            @strong class=block text-xl font-black text-white
               Compras, reforma e manutenção
 
-            @ul class=mt-4 space-y-3 text-slate-200
-              @li
-                Um contato, um orçamento e um fornecedor.
-              @li
-                Obra com escopo, preço e cronograma definidos.
-              @li
-                Manutenção contínua depois da entrega.
+            @div class=mt-4 space-y-3
+              @p class=text-slate-200
+                ✓ Um contato, um orçamento e um fornecedor.
+
+              @p class=text-slate-200
+                ✓ Obra com escopo, preço e cronograma definidos.
+
+              @p class=text-slate-200
+                ✓ Manutenção contínua depois da entrega.
 
           @a href=https://wa.me/5567981692351?text=Olá%2C%20quero%20falar%20sobre%20soluções%20para%20escolas., target=_blank, class=inline-flex mt-7 px-6 py-3.5 rounded-full bg-[#FFB719] text-[#0B2448] font-black hover:-translate-y-1 transition
             Mande sua lista ou agende uma vistoria
@@ -152,7 +154,7 @@ body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smoo
                 Montamos um contrato do tamanho da sua operação.
 
             @div class=rounded-2xl bg-[#0B2448] p-6 text-white shadow-sm
-              @strong class=block text-lg font-black
+              @strong class=block text-lg font-black text-white
                 3. Chamado e resolução
               @p class=mt-2 text-slate-300
                 Primeiro nível remoto. Se não resolver, atendimento presencial.
@@ -199,7 +201,7 @@ body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smoo
                 Arquivos guardados e testados.
 
             @div class=rounded-2xl bg-[#0B2448] p-6 text-white
-              @strong class=font-black
+              @strong class=font-black text-white
                 Monitoramento
               @p class=mt-2 text-sm text-slate-300
                 Alerta antes do problema virar prejuízo.
@@ -282,4 +284,4 @@ body-class: bg-slate-50 text-[#0B2448] antialiased overflow-x-hidden scroll-smoo
         Konectai Tecnologia. Todos os direitos reservados.
 
       @p class=mt-2 text-xs text-slate-600
-        Feito com Seed by Thiago da Silva Alves · (88) 9 9807-3780
+        Feito com Seed por VulpiCode Web & Software Studio · Thiago da Silva Alves · (88) 9 9807-3780

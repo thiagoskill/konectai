@@ -12,6 +12,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.3.3"
   }
 }
